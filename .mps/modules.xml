@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/UDML.core.runtime/UDML.core.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/UDML.core.sandbox/UDML.core.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/UDML.core/UDML.core.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/UDML.dcsl.runtime/UDML.dcsl.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/UDML.dcsl.sandbox/UDML.dcsl.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/UDML.dcsl/UDML.dcsl.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/UDML.diagram.runtime/UDML.diagram.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/UDML.diagram.sandbox/UDML.diagram.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/UDML.diagram/UDML.diagram.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/UDML.rbac.runtime/UDML.rbac.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/UDML.rbac.sandbox/UDML.rbac.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/UDML.rbac/UDML.rbac.mpl" folder="" />
+    </projectModules>
+  </component>
+</project>

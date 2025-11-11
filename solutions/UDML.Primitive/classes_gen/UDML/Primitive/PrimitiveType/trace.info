@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root nodeRef="r:93523771-0d15-4ae3-a629-2a1a80f4e73e(UDML.Primitive.PrimitiveType)/4183952400184486387">
+    <file name="map_DomainModel.java">
+      <unit id="4183952400184486387" at="6,0,8,0" name="UDML.Primitive.PrimitiveType.map_DomainModel" />
+    </file>
+  </root>
+</debug-info>
+
