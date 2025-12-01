@@ -2,10 +2,12 @@
 <model ref="r:8a1306e6-be63-4b5e-801e-6094cad57bfd(UDML.rbac.structure)">
   <persistence version="9" />
   <languages>
+    <use id="fd381d93-1dce-4228-ba53-a4e0ecaf0da2" name="UDML.core" version="0" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="ucg7" ref="r:364988e2-6287-4edf-be31-15c02c2e0d7a(UDML.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -23,6 +25,12 @@
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
+      </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
@@ -176,25 +184,6 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6FJsdbRZujJ">
-    <property role="EcuMT" value="7705501538860262639" />
-    <property role="TrG5h" value="RBACAnnotations" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6FJsdbRZujO" role="1TKVEi">
-      <property role="IQ2ns" value="7705501538860262644" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="policyRefs" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6FJsdbRZujl" resolve="Policy" />
-    </node>
-    <node concept="1TJgyj" id="6FJsdbRZujQ" role="1TKVEi">
-      <property role="IQ2ns" value="7705501538860262646" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="permissionRef" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6FJsdbRZuiZ" resolve="Permission" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="6FJsdbRZujS">
     <property role="EcuMT" value="7705501538860262648" />
     <property role="TrG5h" value="RbacRoot" />
@@ -227,6 +216,87 @@
       <property role="20kJfa" value="SodContrains" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6FJsdbRZujE" resolve="SoDConstraint" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1OphLpFgTZS">
+    <property role="EcuMT" value="2096785263132123128" />
+    <property role="TrG5h" value="Session" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2Npk7GoCe7b" role="1TKVEl">
+      <property role="IQ2nx" value="3231702697239437771" />
+      <property role="TrG5h" value="timeStart" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="2Npk7GoCe7c" role="1TKVEl">
+      <property role="IQ2nx" value="3231702697239437772" />
+      <property role="TrG5h" value="timeEnd" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="2Npk7GoCe7d" role="1TKVEl">
+      <property role="IQ2nx" value="3231702697239437773" />
+      <property role="TrG5h" value="id" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="2Npk7GoCe7k" role="1TKVEl">
+      <property role="IQ2nx" value="3231702697239437780" />
+      <property role="TrG5h" value="minConflictSize" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="2Npk7GoCe7l" role="1TKVEl">
+      <property role="IQ2nx" value="3231702697239437781" />
+      <property role="TrG5h" value="scope" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="2Npk7GoCe7o" role="1TKVEl">
+      <property role="IQ2nx" value="3231702697239437784" />
+      <property role="TrG5h" value="enable" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="2Npk7GoCe7r" role="1TKVEl">
+      <property role="IQ2nx" value="3231702697239437787" />
+      <property role="TrG5h" value="exceptionExpr" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1OphLpFgTZU">
+    <property role="EcuMT" value="2096785263132123130" />
+    <property role="TrG5h" value="DynamicSeparationOfDuty" />
+    <ref role="1TJDcQ" node="1OphLpFgTZS" resolve="Session" />
+    <node concept="1TJgyj" id="2Npk7GoCe7n" role="1TKVEi">
+      <property role="IQ2ns" value="3231702697239437783" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="conflictRole" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6FJsdbRZuiT" resolve="Role" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1OphLpFgTZV">
+    <property role="EcuMT" value="2096785263132123131" />
+    <property role="TrG5h" value="StaticSeparationOfDuty" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="PlHQZ" id="2Npk7GoCe6R">
+    <property role="EcuMT" value="3231702697239437751" />
+    <property role="TrG5h" value="RBACAnnointern" />
+    <node concept="PrWs8" id="2Npk7GoCe6S" role="PrDN$">
+      <ref role="PrY4T" to="ucg7:4BwbhL$IYw_" resolve="Annotation" />
+    </node>
+    <node concept="1TJgyi" id="2Npk7GoCe75" role="1TKVEl">
+      <property role="IQ2nx" value="3231702697239437765" />
+      <property role="TrG5h" value="targetNodeRef" />
+      <ref role="AX2Wp" to="ucg7:4BwbhL$IYYl" resolve="ParameterDirectionKind" />
+    </node>
+    <node concept="1TJgyj" id="2Npk7GoCe77" role="1TKVEi">
+      <property role="IQ2ns" value="3231702697239437767" />
+      <property role="20kJfa" value="policyRef" />
+      <ref role="20lvS9" node="6FJsdbRZujl" resolve="Policy" />
+    </node>
+    <node concept="1TJgyj" id="2Npk7GoCe79" role="1TKVEi">
+      <property role="IQ2ns" value="3231702697239437769" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="permissionRef" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6FJsdbRZuiZ" resolve="Permission" />
     </node>
   </node>
 </model>

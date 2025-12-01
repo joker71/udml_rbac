@@ -47,6 +47,7 @@
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+        <module reference="fd381d93-1dce-4228-ba53-a4e0ecaf0da2(UDML.core)" version="0" />
         <module reference="6ca29f22-b4ff-46a5-8ec7-8f1d723ef329(UDML.rbac)" version="0" />
         <module reference="c1d58c89-c6d4-4460-84f4-ec947844ab7d(UDML.rbac.generator)" version="0" />
         <module reference="da6a1031-6e38-45bf-b3c8-4081c509cedc(UDML.rbac.runtime)" version="0" />
@@ -55,7 +56,11 @@
       <mapping-priorities />
     </generator>
   </generators>
+  <dependencies>
+    <dependency reexport="true">3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)</dependency>
+  </dependencies>
   <languageVersions>
+    <language slang="l:fd381d93-1dce-4228-ba53-a4e0ecaf0da2:UDML.core" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
@@ -94,6 +99,7 @@
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+    <module reference="fd381d93-1dce-4228-ba53-a4e0ecaf0da2(UDML.core)" version="0" />
     <module reference="6ca29f22-b4ff-46a5-8ec7-8f1d723ef329(UDML.rbac)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
@@ -101,6 +107,8 @@
   <runtime>
     <dependency reexport="false">da6a1031-6e38-45bf-b3c8-4081c509cedc(UDML.rbac.runtime)</dependency>
   </runtime>
-  <extendedLanguages />
+  <extendedLanguages>
+    <extendedLanguage>fd381d93-1dce-4228-ba53-a4e0ecaf0da2(UDML.core)</extendedLanguage>
+  </extendedLanguages>
 </language>
 
