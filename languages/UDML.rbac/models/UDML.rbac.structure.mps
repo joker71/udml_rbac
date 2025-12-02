@@ -291,13 +291,6 @@
       <property role="20kJfa" value="policyRef" />
       <ref role="20lvS9" node="6FJsdbRZujl" resolve="Policy" />
     </node>
-    <node concept="1TJgyj" id="2Npk7GoCe79" role="1TKVEi">
-      <property role="IQ2ns" value="3231702697239437769" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="permissionRef" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6FJsdbRZuiZ" resolve="Permission" />
-    </node>
   </node>
 </model>
 
