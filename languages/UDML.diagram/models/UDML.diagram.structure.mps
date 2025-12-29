@@ -68,7 +68,7 @@
   <node concept="1TIwiD" id="3nQL55EB_07">
     <property role="EcuMT" value="3888511182241157127" />
     <property role="TrG5h" value="ClassNode" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3nQL55EB_08" role="PzmwI">
       <ref role="PrY4T" node="3nQL55EB_04" resolve="DiagramNode" />
     </node>
@@ -82,7 +82,7 @@
   <node concept="1TIwiD" id="3nQL55EB_0a">
     <property role="EcuMT" value="3888511182241157130" />
     <property role="TrG5h" value="AssociationEdge" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3nQL55EB_0b" role="PzmwI">
       <ref role="PrY4T" node="3nQL55EB_05" resolve="DiagramEdge" />
     </node>

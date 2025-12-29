@@ -86,7 +86,7 @@
   <node concept="1TIwiD" id="4BwbhL$IYwG">
     <property role="EcuMT" value="5323304359524296748" />
     <property role="TrG5h" value="Concern" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4BwbhL$IYwH" role="1TKVEl">
       <property role="IQ2nx" value="5323304359524296749" />
       <property role="TrG5h" value="name" />
@@ -104,7 +104,7 @@
     <property role="EcuMT" value="5323304359524296752" />
     <property role="TrG5h" value="DomainModel" />
     <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4BwbhL$IYwL" role="1TKVEl">
       <property role="IQ2nx" value="5323304359524296753" />
       <property role="TrG5h" value="name" />
@@ -148,7 +148,7 @@
   <node concept="1TIwiD" id="4BwbhL$IYXP">
     <property role="EcuMT" value="5323304359524298613" />
     <property role="TrG5h" value="Generalization" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4BwbhL$IYXS" role="1TKVEi">
       <property role="IQ2ns" value="5323304359524298616" />
       <property role="20kJfa" value="specific" />
@@ -159,7 +159,7 @@
   <node concept="1TIwiD" id="4BwbhL$IYXU">
     <property role="EcuMT" value="5323304359524298618" />
     <property role="TrG5h" value="Package" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4BwbhL$IYXV" role="PzmwI">
       <ref role="PrY4T" node="4BwbhL$IYwy" resolve="Annotable" />
     </node>
@@ -184,7 +184,7 @@
   <node concept="1TIwiD" id="4BwbhL$IYXZ">
     <property role="EcuMT" value="5323304359524298623" />
     <property role="TrG5h" value="Class" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4BwbhL$IYY0" role="PzmwI">
       <ref role="PrY4T" node="4BwbhL$IYwO" resolve="Classifier" />
     </node>
@@ -209,7 +209,7 @@
   <node concept="1TIwiD" id="4BwbhL$IYY6">
     <property role="EcuMT" value="5323304359524298630" />
     <property role="TrG5h" value="Property" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4BwbhL$IYYu" role="PzmwI">
       <ref role="PrY4T" node="4BwbhL$IYwy" resolve="Annotable" />
     </node>
@@ -228,7 +228,7 @@
   <node concept="1TIwiD" id="4BwbhL$IYY7">
     <property role="EcuMT" value="5323304359524298631" />
     <property role="TrG5h" value="Operation" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4BwbhL$IYYr" role="PzmwI">
       <ref role="PrY4T" node="4BwbhL$IYwy" resolve="Annotable" />
     </node>
@@ -243,7 +243,7 @@
   <node concept="1TIwiD" id="4BwbhL$IYYk">
     <property role="EcuMT" value="5323304359524298644" />
     <property role="TrG5h" value="Parameter" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4BwbhL$IYYo" role="1TKVEl">
       <property role="IQ2nx" value="5323304359524298648" />
       <property role="TrG5h" value="direction" />
@@ -273,7 +273,7 @@
   <node concept="1TIwiD" id="4BwbhL$IYYt">
     <property role="EcuMT" value="5323304359524298653" />
     <property role="TrG5h" value="Association" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4BwbhL$IYYx" role="PzmwI">
       <ref role="PrY4T" node="4BwbhL$IYwO" resolve="Classifier" />
     </node>
@@ -289,7 +289,7 @@
   <node concept="1TIwiD" id="4BwbhL$IYY$">
     <property role="EcuMT" value="5323304359524298660" />
     <property role="TrG5h" value="DataType" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4BwbhL$IYY_" role="PzmwI">
       <ref role="PrY4T" node="4BwbhL$IYwO" resolve="Classifier" />
     </node>
