@@ -60,18 +60,13 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6FJsdbRZuiU" role="1TKVEl">
       <property role="IQ2nx" value="7705501538860262586" />
-      <property role="TrG5h" value="name" />
+      <property role="TrG5h" value="roleName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="6FJsdbRZuiX" role="1TKVEl">
       <property role="IQ2nx" value="7705501538860262589" />
       <property role="TrG5h" value="description" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyj" id="6FJsdbRZuiY" role="1TKVEi">
-      <property role="IQ2ns" value="7705501538860262590" />
-      <property role="20kJfa" value="parents" />
-      <ref role="20lvS9" node="6FJsdbRZuiT" resolve="Role" />
     </node>
     <node concept="1TJgyj" id="6FJsdbRZujc" role="1TKVEi">
       <property role="IQ2ns" value="7705501538860262604" />
@@ -93,11 +88,6 @@
     <node concept="1TJgyi" id="6FJsdbRZujh" role="1TKVEl">
       <property role="IQ2nx" value="7705501538860262609" />
       <property role="TrG5h" value="resource" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="6FJsdbRZuji" role="1TKVEl">
-      <property role="IQ2nx" value="7705501538860262610" />
-      <property role="TrG5h" value="condition" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="6FJsdbRZujk" role="1TKVEl">
@@ -122,7 +112,7 @@
   </node>
   <node concept="1TIwiD" id="6FJsdbRZujl">
     <property role="EcuMT" value="7705501538860262613" />
-    <property role="TrG5h" value="Policy" />
+    <property role="TrG5h" value="ReviewPolicy" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6FJsdbRZujm" role="1TKVEl">
       <property role="IQ2nx" value="7705501538860262614" />
@@ -186,7 +176,7 @@
   </node>
   <node concept="1TIwiD" id="6FJsdbRZujS">
     <property role="EcuMT" value="7705501538860262648" />
-    <property role="TrG5h" value="RbacRoot" />
+    <property role="TrG5h" value="RbacModel" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6FJsdbRZujT" role="1TKVEi">
@@ -196,26 +186,39 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6FJsdbRZuiT" resolve="Role" />
     </node>
+    <node concept="1TJgyj" id="JufSkI4Jxv" role="1TKVEi">
+      <property role="IQ2ns" value="855190820483168351" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="Users" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="JufSkI4Jxw" resolve="User" />
+    </node>
     <node concept="1TJgyj" id="6FJsdbRZujU" role="1TKVEi">
       <property role="IQ2ns" value="7705501538860262650" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="Permission" />
+      <property role="20kJfa" value="Permissions" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6FJsdbRZuiZ" resolve="Permission" />
     </node>
     <node concept="1TJgyj" id="6FJsdbRZujV" role="1TKVEi">
       <property role="IQ2ns" value="7705501538860262651" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="Policies" />
+      <property role="20kJfa" value="Session" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6FJsdbRZujl" resolve="Policy" />
+      <ref role="20lvS9" node="1OphLpFgTZS" resolve="Session" />
     </node>
     <node concept="1TJgyj" id="6FJsdbRZujW" role="1TKVEi">
       <property role="IQ2ns" value="7705501538860262652" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="SodContrains" />
+      <property role="20kJfa" value="Contrains" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6FJsdbRZujE" resolve="SoDConstraint" />
+    </node>
+    <node concept="1TJgyj" id="JufSkI4Jxx" role="1TKVEi">
+      <property role="IQ2ns" value="855190820483168353" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="review" />
+      <ref role="20lvS9" node="6FJsdbRZujl" resolve="ReviewPolicy" />
     </node>
   </node>
   <node concept="1TIwiD" id="1OphLpFgTZS">
@@ -257,15 +260,27 @@
       <property role="TrG5h" value="exceptionExpr" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyj" id="JufSkI4JxI" role="1TKVEi">
+      <property role="IQ2ns" value="855190820483168366" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="activeRole" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6FJsdbRZuiT" resolve="Role" />
+    </node>
+    <node concept="1TJgyj" id="JufSkI4JxP" role="1TKVEi">
+      <property role="IQ2ns" value="855190820483168373" />
+      <property role="20kJfa" value="user" />
+      <ref role="20lvS9" node="JufSkI4JxK" resolve="User" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1OphLpFgTZU">
     <property role="EcuMT" value="2096785263132123130" />
     <property role="TrG5h" value="DynamicSeparationOfDuty" />
-    <ref role="1TJDcQ" node="1OphLpFgTZS" resolve="Session" />
+    <ref role="1TJDcQ" node="6FJsdbRZujE" resolve="SoDConstraint" />
     <node concept="1TJgyj" id="2Npk7GoCe7n" role="1TKVEi">
       <property role="IQ2ns" value="3231702697239437783" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="conflictRole" />
+      <property role="20kJfa" value="roles" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6FJsdbRZuiT" resolve="Role" />
     </node>
@@ -273,7 +288,29 @@
   <node concept="1TIwiD" id="1OphLpFgTZV">
     <property role="EcuMT" value="2096785263132123131" />
     <property role="TrG5h" value="StaticSeparationOfDuty" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="6FJsdbRZujE" resolve="SoDConstraint" />
+    <node concept="1TJgyj" id="JufSkI4Jx5" role="1TKVEi">
+      <property role="IQ2ns" value="855190820483168325" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="roles" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="6FJsdbRZuiT" resolve="Role" />
+    </node>
+    <node concept="1TJgyi" id="JufSkI4Jx7" role="1TKVEl">
+      <property role="IQ2nx" value="855190820483168327" />
+      <property role="TrG5h" value="cardinality" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="JufSkI4JxX" role="1TKVEl">
+      <property role="IQ2nx" value="855190820483168381" />
+      <property role="TrG5h" value="scope" />
+      <ref role="AX2Wp" node="JufSkI4JxR" resolve="ScopeKind" />
+    </node>
+    <node concept="1TJgyi" id="JufSkI4JxY" role="1TKVEl">
+      <property role="IQ2nx" value="855190820483168382" />
+      <property role="TrG5h" value="enable" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="PlHQZ" id="2Npk7GoCe6R">
     <property role="EcuMT" value="3231702697239437751" />
@@ -289,7 +326,70 @@
     <node concept="1TJgyj" id="2Npk7GoCe77" role="1TKVEi">
       <property role="IQ2ns" value="3231702697239437767" />
       <property role="20kJfa" value="policyRef" />
-      <ref role="20lvS9" node="6FJsdbRZujl" resolve="Policy" />
+      <ref role="20lvS9" node="6FJsdbRZujl" resolve="ReviewPolicy" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="JufSkI4Jxa">
+    <property role="EcuMT" value="855190820483168330" />
+    <property role="TrG5h" value="PrerequisiteConstraint" />
+    <ref role="1TJDcQ" node="6FJsdbRZujE" resolve="SoDConstraint" />
+    <node concept="1TJgyj" id="JufSkI4Jxe" role="1TKVEi">
+      <property role="IQ2ns" value="855190820483168334" />
+      <property role="20kJfa" value="PrerequisiteRolse" />
+      <ref role="20lvS9" node="6FJsdbRZuiT" resolve="Role" />
+    </node>
+    <node concept="1TJgyj" id="JufSkI4Jxg" role="1TKVEi">
+      <property role="IQ2ns" value="855190820483168336" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="requires" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6FJsdbRZuiT" resolve="Role" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="JufSkI4Jxi">
+    <property role="EcuMT" value="855190820483168338" />
+    <property role="TrG5h" value="CardinalityConstraint" />
+    <ref role="1TJDcQ" node="6FJsdbRZujE" resolve="SoDConstraint" />
+    <node concept="1TJgyj" id="JufSkI4Jxj" role="1TKVEi">
+      <property role="IQ2ns" value="855190820483168339" />
+      <property role="20kJfa" value="target" />
+      <ref role="20lvS9" node="6FJsdbRZuiT" resolve="Role" />
+    </node>
+    <node concept="1TJgyi" id="JufSkI4Jxl" role="1TKVEl">
+      <property role="IQ2nx" value="855190820483168341" />
+      <property role="TrG5h" value="max" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="JufSkI4JxK">
+    <property role="EcuMT" value="855190820483168368" />
+    <property role="TrG5h" value="User" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="JufSkI4JxL" role="1TKVEi">
+      <property role="IQ2ns" value="855190820483168369" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="roles" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6FJsdbRZuiT" resolve="Role" />
+    </node>
+    <node concept="1TJgyi" id="JufSkI4JxM" role="1TKVEl">
+      <property role="IQ2nx" value="855190820483168370" />
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="25R3W" id="JufSkI4JxR">
+    <property role="3F6X1D" value="855190820483168375" />
+    <property role="TrG5h" value="ScopeKind" />
+    <node concept="25R33" id="JufSkI4JxS" role="25R1y">
+      <property role="3tVfz5" value="855190820483168376" />
+      <property role="TrG5h" value="SYSTEM" />
+      <property role="1L1pqM" value="1" />
+    </node>
+    <node concept="25R33" id="JufSkI4JxU" role="25R1y">
+      <property role="3tVfz5" value="855190820483168378" />
+      <property role="TrG5h" value="SESSION" />
+      <property role="1L1pqM" value="2" />
     </node>
   </node>
 </model>
