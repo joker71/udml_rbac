@@ -23,6 +23,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -79,6 +80,7 @@
   <node concept="1TIwiD" id="6FJsdbRZuiZ">
     <property role="EcuMT" value="7705501538860262591" />
     <property role="TrG5h" value="Permission" />
+    <property role="34LRSv" value="&lt;Permission_Alias&gt;" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6FJsdbRZuj0" role="1TKVEl">
       <property role="IQ2nx" value="7705501538860262592" />
